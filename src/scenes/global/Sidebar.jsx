@@ -1,4 +1,8 @@
+import CategoryOutlinedIcon from "@mui/icons-material/CategoryOutlined";
+import FactoryOutlinedIcon from "@mui/icons-material/FactoryOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import InventoryOutlinedIcon from "@mui/icons-material/InventoryOutlined";
+import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { useState } from "react";
@@ -84,6 +88,34 @@ const Sidebar = () => {
               title="Dashboard"
               to="/"
               icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Orders"
+              to="/orders"
+              icon={<LocalShippingOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Items"
+              to="/items"
+              icon={<CategoryOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Buyers"
+              to="/buyers"
+              icon={<InventoryOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Suppliers"
+              to="/suppliers"
+              icon={<FactoryOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
