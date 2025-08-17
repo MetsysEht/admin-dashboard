@@ -19,14 +19,14 @@ const OrderDetails = () => {
   const order = data.order;
 
   const columns = [
-    { field: "itemId", headerName: "Item ID", width: 100 },
-    { field: "quantity", headerName: "Quantity", width: 120 },
-    { field: "price", headerName: "Price", width: 120 },
+    { field: "itemId", headerName: "Item ID", flex: 1 },
+    { field: "quantity", headerName: "Quantity", flex: 1 },
+    { field: "price", headerName: "Price", flex: 1 },
   ];
 
   return (
     <Box m="20px">
-      <Header title={`Order #${order.order_id}`} subtitle="Order Details" />
+      <Header title={`Order #${order.orderId}`} subtitle="Order Details" />
 
       {/* Order Info */}
       <Paper
